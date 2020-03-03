@@ -1,0 +1,44 @@
+{
+  "name": "sky-auth",
+  "version": "1.0.0",
+  "author": "jcolscript",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js --ignore tests",
+    "dev:debug": "nodemon --inspect src/server.js --ignore tests",
+    "eslint": "eslint --fix . --ext .js",
+    "test": "SET NODE_ENV=test&& jest"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "mongoose-bcrypt": "^1.6.0",
+    "uuid": "^3.4.0",
+    "youch": "^2.0.10",
+    "yup": "^0.28.1"
+  },
+  "devDependencies": {
+    "@sucrase/jest-plugin": "^2.0.0",
+    "@types/jest": "^25.1.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "24.1.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sucrase": "^3.12.1",
+    "supertest": "^4.0.2"
+  }
+}
